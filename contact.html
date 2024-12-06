@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            button{
+                font-size: 0.6em;
+            }
+            li{
+                margin: 0.5em;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                a:link,a:visited{
+                    color: #e096fe;
+                }
+                a:hover, a:active{
+                    color: #7458e2;
+                }
+            }
+
+            #linkedinLogo, #githubLogo{
+                text-decoration: none;
+                margin: 1%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <ul>
+                <li><strong>Email:</strong><a href="mailto:yg2630@nyu.edu">yg2630@nyu.edu</a></li>
+                <li><strong>Wechat:</strong> Cassie__Gem</li>
+                <li>
+                    <a href="https://www.linkedin.com/in/yuanzougao/" id="linkedinLogo">
+                        <img src="images/linkedin-icon.png" width="20" height=auto alt="LinkedIn icon">
+                    </a>
+                    <a href="https://github.com/yuanzou0?tab=repositories" id="githubLogo">
+                        <img src="images/github-icon.png" width="20" height=auto alt="Github icon">
+                    </a>
+                </li>
+            </ul>
+
+            <form action="https://formspree.io/f/xanyvzqe" method="post">
+                <label>
+                    Your name: <input type="text" name="name" required>
+                </label>
+                <label>
+                    Your email: <input type="email" name="email" required>
+                </label>
+                <label>
+                    Your message: <textarea name="message" rows="6" placeholder="Write me a message!"></textarea>
+                </label>
+                <button type="submit">Send</button>
+                <button type="reset" id="resetForm">Reset</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>© 2024 Yuanzou Gao</p>
+        </footer>
+    </body>
+</html>

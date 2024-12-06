@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "PlaypenSans";
+    src: url(https://fonts.gstatic.com/s/playpensans/v13/dg43_pj1p6gXP0gzAZgm4c8XQArSU7ACQSn4IvRhunE9Ffmnc0wNR-TC-LCAtR1TgQ.1.woff2) format('woff2');;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Styles */
+body {
+    font-family: 'PlaypenSans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #2d2d2d;
+}
+
+/* Header Styles */
+header {
+    font-family: 'PlaypenSans';
+    background: #2d2d2d;
+    color: #ffffff;
+    padding: 1rem 0;   
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 1rem;
+}
+
+nav ul li a:link, nav ul li a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+nav ul li a:hover, nav ul li a:active{
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Homepage Styles */
+.background {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 4rem 1rem;
+}
+
+/* grid to adjust the homepage*/
+.center-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+        "a a a"
+        "b b b"
+        "c d e";
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width:90vh; 
+    margin: auto;
+}
+
+.a{grid-area: a; margin-top: 30%;}
+.b{grid-area: b;}
+.c{grid-area: c; text-align: right;}
+.d{grid-area: d;}
+.e{grid-area: e; text-align: left;}
+
+/* About Page Styles */
+p {
+    margin: 1rem 0;
+}
+
+.about_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "photo_part word_part"
+    "quote_part quote_part";
+    padding: 1rem;
+}
+
+.photo_part{
+    grid-area: photo_part;
+}
+.word_part{
+    grid-area: word_part;
+    margin: auto;
+}
+.quote_part{
+    grid-area: quote_part;
+    font-size: 0.8em;
+}
+
+/* Contact Page Styles */
+form {
+    margin: 2rem auto;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #2d2d2d;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Footer Styles */
+footer {
+    background: #2d2d2d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Resume Page Styles */
+embed {
+    margin: 2rem 0;
+    border: 1px solid #ccc;
+}
+
+/* Responsive Styles */
+/* Tablets */
+/* Also for mobile*/
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .background h2 {
+        font-size: 2rem;
+    }
+
+    .about_container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "photo_part"
+        "word_part"
+        "quote_part";
+        padding: 1rem;
+    }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #2d2d2d;
+        color: #edfcfe;
+    }
+
+    header, footer {
+        background: #1e1e1e;
+    }
+
+    form {
+        color:#110931;
+        background: #d1f9fe;
+    }
+
+    form input, form textarea {
+        color: #ecfdff;
+        background: #060303;
+    }
+
+    #resume{
+        color: #edfcfe;
+    }
+}
