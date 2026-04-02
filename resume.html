@@ -27,14 +27,41 @@
         </header>
 
         <main>
-            <embed src="resume.pdf" width="100%" height="500px">
-            <p><a id="resume" href="resume.pdf" download>Download My Resume (PDF)</a></p>
+            <div class="resume-controls" style="text-align: center; margin-bottom: 2rem; margin-top: 1rem;">
+                <button onclick="showResume('en')" id="tab-en" class="resume-tab active">English Resume</button>
+                <button onclick="showResume('cn')" id="tab-cn" class="resume-tab">中文简历</button>
+            </div>
+
+            <div id="resume-en" class="resume-section">
+                <embed src="resume.pdf" width="100%" height="700px">
+                <p style="text-align: center;"><a class="resume-btn" href="resume.pdf" download>Download English Resume (PDF)</a></p>
+            </div>
+
+            <div id="resume-cn" class="resume-section" style="display: none;">
+                <embed src="resume_cn.pdf" width="100%" height="700px">
+                <p style="text-align: center;"><a class="resume-btn" href="resume_cn.pdf" download>下载中文简历 (PDF)</a></p>
+            </div>
         </main>
 
         <footer>
             <p>© 2026 Yuanzou Gao</p>
         </footer>
         
+        <script>
+            function showResume(lang) {
+                // Hide both sections
+                document.getElementById('resume-en').style.display = 'none';
+                document.getElementById('resume-cn').style.display = 'none';
+                
+                // Remove active class from both tabs
+                document.getElementById('tab-en').classList.remove('active');
+                document.getElementById('tab-cn').classList.remove('active');
+                
+                // Show selected section and add active class to selected tab
+                document.getElementById('resume-' + lang).style.display = 'block';
+                document.getElementById('tab-' + lang).classList.add('active');
+            }
+        </script>
         <script src="script.js" defer></script>
     </body>
 </html>
