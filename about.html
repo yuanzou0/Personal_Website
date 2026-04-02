@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Me</title>
         <link rel="stylesheet" href="styles.css">
+        <!-- Leaflet CSS & JS for Interactive Map -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
         <style>
             main{
                 font-size: 1.2em;
@@ -19,6 +21,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="resume.html">Resume</a></li>
                 </ul>
@@ -36,6 +39,22 @@
                     <p>Previously, I earned my B.A. Joint Major in Mathematics and Data Science from NYU, and also studied at Mount Holyoke College. My research interests and experiences include Machine Learning, Multimodal Pipelines, and Statistical Analysis.</p>
                 </div>
 
+                <div class="skills_part">
+                    <h3 style="margin-top: 0;">Skills & Expertise</h3>
+                    <span class="tag">Python</span>
+                    <span class="tag">R</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Stata</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Data Visualization</span>
+                </div>
+
+                <div class="map_part">
+                    <h3 style="margin-top: 0;">My Footprints</h3>
+                    <p style="font-size: 0.85em; color: #777; margin-top: -10px;">Places I've studied and worked.</p>
+                    <div id="map" style="height: 350px; border-radius: 12px; z-index: 1; border: 1px solid #eee;"></div>
+                </div>
+
                 <div class="quote_part">
                     <p id="dailyMessage">Hello world</p>
                 </div>
@@ -46,6 +65,30 @@
             <p>© 2026 Yuanzou Gao</p>
         </footer>
 
+        <script>
+            // Initialize the map
+            var map = L.map('map').setView([35, -10], 2); // Centered to show both US and China
+
+            // Add OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap'
+            }).addTo(map);
+
+            // Locations based on resume
+            var locations = [
+                { name: "New York University (NYU)<br>M.S. Data Science", coords: [40.7295, -73.9965] },
+                { name: "Mount Holyoke College<br>B.A. Math & Economics", coords: [42.2556, -72.5745] },
+                { name: "MicroPort (Shanghai)<br>Data Intern", coords: [31.2304, 121.4737] },
+                { name: "Duke Kunshan University<br>Research Intern", coords: [31.3846, 120.9807] }
+            ];
+
+            // Add markers
+            locations.forEach(function(loc) {
+                L.marker(loc.coords).addTo(map)
+                    .bindPopup('<div style="text-align:center;"><b>' + loc.name + '</b></div>');
+            });
+        </script>
         <script src="script_about.js" defer></script>
     </body>
 </html>

@@ -67,16 +67,16 @@ main {
 /* Homepage Styles */
 .center-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto auto;
     grid-template-areas: 
-        "a a a"
-        "b b b"
-        "c d e";
+        "a a a a"
+        "b b b b"
+        "c f d e";
     gap: 1.5rem;
     justify-content: center;
     align-items: center;
-    max-width: 600px; 
+    max-width: 700px; 
     margin: 15vh auto;
     background: rgba(255, 255, 255, 0.9);
     padding: 3rem;
@@ -88,6 +88,7 @@ main {
 .a { grid-area: a; margin-top: 0; }
 .b { grid-area: b; margin-bottom: 2rem; }
 .c { grid-area: c; text-align: center; }
+.f { grid-area: f; text-align: center; }
 .d { grid-area: d; text-align: center; }
 .e { grid-area: e; text-align: center; }
 
@@ -101,8 +102,10 @@ p {
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 
     "photo_part word_part"
+    "skills_part skills_part"
+    "map_part map_part"
     "quote_part quote_part";
-    gap: 3rem;
+    gap: 2rem;
     padding: 3rem;
     background: #ffffff;
     border-radius: 20px;
@@ -132,6 +135,27 @@ p {
     justify-content: center;
 }
 
+.skills_part {
+    grid-area: skills_part;
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+}
+
+.map_part {
+    grid-area: map_part;
+}
+
+.tag {
+    display: inline-block;
+    background: #f0f7ff;
+    color: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin: 0.3rem 0.3rem 0 0;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
 .quote_part {
     grid-area: quote_part;
     font-size: 0.9em;
@@ -141,6 +165,40 @@ p {
     margin-top: 1rem;
     padding-top: 2rem;
     border-top: 1px solid #eee;
+}
+
+/* Projects Page Styles */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.project-date {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 /* Contact Page Styles */
@@ -275,12 +333,22 @@ embed {
         grid-template-areas: 
         "photo_part"
         "word_part"
+        "skills_part"
+        "map_part"
         "quote_part";
         text-align: center;
         padding: 2rem;
     }
     
     .center-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "f"
+            "d"
+            "e";
         margin: 5vh auto;
         padding: 2rem;
     }
@@ -313,9 +381,22 @@ embed {
         box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
-    .about_container, form {
+    .about_container, form, .project-card {
         background: #1e1e1e;
         box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    .project-card h3 {
+        color: #e0e0e0;
+    }
+
+    .tag {
+        background: #2c3e50;
+        color: #66b2ff;
+    }
+
+    .skills_part {
+        border-top: 1px solid #333;
     }
 
     form label {
