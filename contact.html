@@ -1,103 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-            button {
-                font-size: 1em;
-            }
-            main ul {
-                padding: 2rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background: #ffffff;
-                max-width: 500px;
-                margin: 0 auto 2rem auto;
-                border-radius: 20px;
-                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-                box-sizing: border-box;
-            }
-            main li {
-                margin: 0.8em 0;
-                list-style: none;
-                font-size: 1.1em;
-            }
-            main li a {
-                color: #007bff;
-                text-decoration: none;
-            }
-            main li a:hover {
-                text-decoration: underline;
-            }
-            #linkedinLogo, #githubLogo {
-                text-decoration: none;
-                margin: 0 15px;
-                display: inline-block;
-                transition: transform 0.3s ease;
-            }
-            #linkedinLogo:hover, #githubLogo:hover {
-                transform: scale(1.1);
-            }
-            @media (prefers-color-scheme: dark) {
-                main ul {
-                    background: #1e1e1e;
-                    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-                }
-                main li a {
-                    color: #66b2ff;
-                }
-            }
-        </style>
-    </head>
-
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <ul>
-                <li><strong>Email:</strong><a href="mailto:yg2630@nyu.edu">yg2630@nyu.edu</a></li>
-                <li><strong>Wechat:</strong> Cassie__Gem</li>
-                <li>
-                    <a href="https://www.linkedin.com/in/yuanzougao/" id="linkedinLogo">
-                        <img src="images/linkedin-icon.png" width="20" height=auto alt="LinkedIn icon">
-                    </a>
-                    <a href="https://github.com/yuanzou0?tab=repositories" id="githubLogo">
-                        <img src="images/github-icon.png" width="20" height=auto alt="Github icon">
-                    </a>
-                </li>
-            </ul>
-
-            <form action="https://formspree.io/f/xanyvzqe" method="post">
-                <label>
-                    Your name: <input type="text" name="name" required>
-                </label>
-                <label>
-                    Your email: <input type="email" name="email" required>
-                </label>
-                <label>
-                    Your message: <textarea name="message" rows="6" placeholder="Write me a message!"></textarea>
-                </label>
-                <button type="submit">Send</button>
-                <button type="reset" id="resetForm">Reset</button>
-            </form>
-        </main>
-
-        <footer>
-            <p>© 2026 Yuanzou Gao</p>
-        </footer>
-    </body>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get in touch with Yuanzou Gao about data science, AI evaluation, and thoughtful collaborations.">
+  <meta name="theme-color" content="#f4f1eb"><title>Contact — Yuanzou Gao</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css"><script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="brand" href="index.html" aria-label="Yuanzou Gao, home"><span class="brand-mark">YG<span class="brand-dot">.</span></span><span class="brand-name">YUANZOU GAO<br>高源邹</span></a><nav class="site-nav" aria-label="Main navigation"><a href="about.html">About</a><a href="projects.html">Projects</a><a href="resume.html">Résumé</a><a class="nav-contact" href="contact.html" aria-current="page">Let's talk <span aria-hidden="true">↗</span></a></nav></header>
+  <main id="main" class="interior-main page-shell">
+    <div class="page-heading" data-reveal><p class="section-index">04 / CONTACT</p><div><h1>Let's <em>connect.</em></h1><p class="heading-note">For roles, collaborations, or a good question worth exploring.</p></div></div>
+    <div class="contact-layout interior-rule">
+      <div class="contact-lead" data-reveal><h2>Start a<br><em>conversation.</em></h2><p>I enjoy work that combines rigorous thinking with meaningful impact. Tell me what you're building.</p><div class="contact-methods"><div class="contact-method"><span>Email</span><a href="mailto:yg2630@nyu.edu">yg2630@nyu.edu ↗</a></div><div class="contact-method"><span>LinkedIn</span><a href="https://www.linkedin.com/in/yuanzougao/" target="_blank" rel="noopener noreferrer">Connect ↗</a></div><div class="contact-method"><span>GitHub</span><a href="https://github.com/yuanzou0" target="_blank" rel="noopener noreferrer">Explore code ↗</a></div><div class="contact-method"><span>WeChat</span><strong>Cassie__Gem</strong></div></div></div>
+      <form class="contact-form" action="https://formspree.io/f/xanyvzqe" method="post" data-reveal><h2>Or leave a note.</h2><label>Your name<input type="text" name="name" autocomplete="name" required></label><label>Your email<input type="email" name="email" autocomplete="email" required></label><label>Your message<textarea name="message" rows="5" placeholder="What would you like to discuss?" required></textarea></label><button class="button button-dark" type="submit">Send message <span aria-hidden="true">↗</span></button></form>
+    </div>
+  </main>
+  <footer class="site-footer"><span>© 2026 YUANZOU GAO</span><span>THOUGHTFUL BY DESIGN.</span><a href="index.html">BACK TO TOP ↑</a></footer>
+</body>
 </html>

@@ -1,72 +1,55 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Yuanzou Gao builds evidence-grounded AI systems and data products. Explore work in agent evaluation, governed RAG, and data science.">
-        <title>Yuanzou Gao · Applied AI & Data Science</title>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-            body {
-                background-image: url("images/home.JPG");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-attachment: fixed;
-                background-size: cover;
-                height: 100vh;
-                margin: 0;
-            }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yuanzou Gao is a data scientist building accountable AI systems through careful evaluation, retrieval, and evidence-led design.">
+  <meta name="theme-color" content="#f4f1eb">
+  <title>Yuanzou Gao — Data Science & Applied AI</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body class="home-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Yuanzou Gao, home"><span class="brand-mark">YG<span class="brand-dot">.</span></span><span class="brand-name">YUANZOU GAO<br>高源邹</span></a>
+    <nav class="site-nav" aria-label="Main navigation"><a href="about.html">About</a><a href="projects.html">Projects</a><a href="resume.html">Résumé</a><a class="nav-contact" href="contact.html">Let's talk <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="home-hero page-shell">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-line"></span> DATA SCIENTIST · APPLIED AI</p>
+        <h1>Making AI<br><em>accountable.</em></h1>
+        <p class="hero-summary">I build systems that can show their work — from rigorous evaluation to grounded retrieval and decisions people can inspect.</p>
+        <div class="hero-actions"><a class="button button-dark" href="projects.html">Explore my work <span aria-hidden="true">↗</span></a><a class="text-link" href="about.html">Get to know me <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="hero-art" data-reveal>
+        <div class="hero-art-grid" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div><div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+        <div class="hero-photo-wrap"><img src="images/IMG_0245_960.JPG" alt="Portrait of Yuanzou Gao" width="960" height="1280" fetchpriority="high"></div>
+        <div class="hero-art-label"><span>FIG. 01</span><span>Portrait of a curious mind</span></div>
+        <span class="hero-star" aria-hidden="true">✳</span>
+      </div>
+      <div class="hero-bottom"><span>BASED IN NEW YORK CITY</span><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
+    </section>
 
-            h1 {
-                margin: 0.1rem;
-                color: #333;
-            }
+    <section class="intro-section page-shell section-rule" data-reveal>
+      <p class="section-index">01 / THE PRACTICE</p>
+      <div class="intro-layout"><h2>Curiosity,<br><em>with proof.</em></h2><div><p class="lead">Good technology asks better questions before it claims to have answers.</p><p>I work at the intersection of data science, AI systems, and human judgment. My projects center on clear baselines, visible tradeoffs, and honest limits.</p><a class="text-link" href="about.html">More about my approach <span aria-hidden="true">↗</span></a></div></div>
+    </section>
 
-            a:link, a:visited {
-                color: #333;
-                text-decoration: none;
-                font-weight: 600;
-                border: 2px solid #333;
-                padding: 0.5rem 1.5rem;
-                border-radius: 30px;
-                display: inline-block;
-                transition: all 0.3s ease;
-            }
+    <section class="featured-section page-shell section-rule">
+      <div class="section-heading" data-reveal><div><p class="section-index">02 / SELECTED WORK</p><h2>Ideas in <em>practice.</em></h2></div><a class="text-link" href="projects.html">All projects <span aria-hidden="true">↗</span></a></div>
+      <div class="featured-list">
+        <a class="featured-row" href="https://github.com/yuanzou0/contextops-lab" target="_blank" rel="noopener noreferrer" data-reveal><span class="work-num">01</span><span class="work-title">ContextOps Lab<small>Agent evaluation &amp; reliability</small></span><span class="work-type">APPLIED AI / 2026</span><span class="work-arrow" aria-hidden="true">↗</span></a>
+        <a class="featured-row" href="https://github.com/yuanzou0/clearcare-health-agent" target="_blank" rel="noopener noreferrer" data-reveal><span class="work-num">02</span><span class="work-title">ClearCare Health<small>Governed health information retrieval</small></span><span class="work-type">RAG / 2026</span><span class="work-arrow" aria-hidden="true">↗</span></a>
+        <a class="featured-row" href="https://github.com/yuanzou0/movielens-1m-recommender" target="_blank" rel="noopener noreferrer" data-reveal><span class="work-num">03</span><span class="work-title">MovieLens 1M<small>Recommendation with honest evaluation</small></span><span class="work-type">DATA SCIENCE / 2026</span><span class="work-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
 
-            a:hover, a:active {
-                color: #fff;
-                background-color: #333;
-                text-decoration: none;
-            }
-
-            @media (prefers-color-scheme: dark) {
-                h1 {
-                    color: #e0e0e0;
-                }
-                a:link, a:visited {
-                    color: #e0e0e0;
-                    border: 2px solid #e0e0e0;
-                }
-                a:hover, a:active {
-                    color: #121212;
-                    background-color: #e0e0e0;
-                }
-            }
-        </style>
-    </head>
-
-    <body>
-        <main>
-            <div class="center-container">
-                <div class="a"><h1>Yuanzou Gao</h1></div>
-                <div class="b"><h1>高源邹</h1><p class="home-tagline">Building AI that can show its work.</p><p class="home-intro">Applied AI, evaluation, and data science · M.S. Data Science at NYU</p></div>
-
-                <div class="c"><p><a href="about.html">About Me</a></p></div>
-                <div class="f"><p><a href="projects.html">Projects</a></p></div>
-                <div class="d"><p><a href="contact.html">Contact</a></p></div>
-                <div class="e"><p><a href="resume.html">Resume</a></p></div>
-            </div>
-        </main>
-    </body>
+    <section class="closing-section"><div class="page-shell closing-inner" data-reveal><p class="section-index">03 / WHAT'S NEXT</p><h2>Let's make<br><em>something matter.</em></h2><div class="closing-bottom"><p>Open to thoughtful conversations about data science, evaluation, and useful AI.</p><a class="button button-light" href="contact.html">Get in touch <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer"><span>© 2026 YUANZOU GAO</span><span>THOUGHTFUL BY DESIGN.</span><a href="https://github.com/yuanzou0" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></footer>
+</body>
 </html>

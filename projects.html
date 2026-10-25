@@ -1,88 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Yuanzou Gao's projects in AI-agent evaluation, governed RAG, recommendation systems, and machine learning.">
-        <title>Projects · Yuanzou Gao</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <h1 class="page-title">Selected Projects</h1>
-            <p class="page-subtitle">Applied AI and data science work, with the evidence and limits behind each result.</p>
-            
-            <div class="project-grid">
-                <div class="project-card">
-                    <p class="project-date">AI Agent Evaluation · 2026</p>
-                    <h3>ContextOps Lab</h3>
-                    <p>Built paired experiments and safety controls to decide when context compression helps an AI agent. A live pilot reduced estimated provider cost, but failed task-quality and latency gates; rollout stayed off. Later local work tested query-aware caching, exact-original fallback, and durable Redis storage.</p>
-                    <div class="project-tags"><span class="tag">Python</span><span class="tag">Evaluation</span><span class="tag">Redis</span></div>
-                    <p><a class="project-link" href="https://github.com/yuanzou0/contextops-lab" target="_blank" rel="noopener noreferrer">View project ↗</a></p>
-                </div>
-
-                <div class="project-card">
-                    <p class="project-date">Governed RAG · 2026</p>
-                    <h3>ClearCare Health</h3>
-                    <p>Built a bounded health-information agent with deterministic emergency routing, governed evidence retrieval, inspectable actions, and a 90-case development evaluation. This is a research prototype without clinical validation.</p>
-                    <div class="project-tags"><span class="tag">Flask</span><span class="tag">RAG</span><span class="tag">Safety</span></div>
-                    <p><a class="project-link" href="https://github.com/yuanzou0/clearcare-health-agent" target="_blank" rel="noopener noreferrer">View project ↗</a></p>
-                </div>
-
-                <div class="project-card">
-                    <p class="project-date">Recommender Systems · 2026</p>
-                    <h3>MovieLens 1M Recommender</h3>
-                    <p>Reworked a course project into a reproducible offline comparison with chronological splits and sampled-candidate ranking. The popularity baseline led on ranking quality; sparse SVD improved catalog coverage and novelty.</p>
-                    <div class="project-tags"><span class="tag">Python</span><span class="tag">Recommendation</span><span class="tag">Experiment Design</span></div>
-                    <p><a class="project-link" href="https://github.com/yuanzou0/movielens-1m-recommender" target="_blank" rel="noopener noreferrer">View project ↗</a></p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Plant Trait Prediction from Crowdsourced Images</h3>
-                    <p class="project-date">04/2025 - 05/2025 | New York University</p>
-                    <p>Built a multimodal (image + metadata) pipeline with ResNet-50, EfficientNetV2, and ViT for predicting six plant traits. Authored experiments aligned with PlantTraits2024 task design and proposed fine-tuning strategies.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span><span class="tag">ResNet-50</span><span class="tag">Computer Vision</span>
-                    </div>
-                    <p><a class="project-link" href="https://github.com/yuanzou0/PlantTraits2024" target="_blank" rel="noopener noreferrer">View project ↗</a></p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Spotify Song Classification & Popularity Analysis</h3>
-                    <p class="project-date">04/2024 - 05/2024 | New York University</p>
-                    <p>Built an ML pipeline on 52,000 Spotify tracks for genre prediction and popularity drivers. Implemented regression models, trained classifiers, and applied PCA/clustering to visualize genre structure.</p>
-                    <div class="project-tags">
-                        <span class="tag">Machine Learning</span><span class="tag">PCA</span><span class="tag">Clustering</span>
-                    </div>
-                    <p><a class="project-link" href="https://github.com/yuanzou0/Spotify-Song-Classification-and-Popularity-Analysis" target="_blank" rel="noopener noreferrer">View project ↗</a></p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Impact of Biases on Teaching Evaluation</h3>
-                    <p class="project-date">03/2022 - 05/2022 | Mount Holyoke College</p>
-                    <p>Studied the impact of unconscious biases on teaching evaluation. Performed data analysis using multiple linear regression and transformation in R to identify potential discrimination based on gender, appearance, and native language.</p>
-                    <div class="project-tags">
-                        <span class="tag">R</span><span class="tag">Statistical Analysis</span><span class="tag">Linear Regression</span>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <p>© 2026 Yuanzou Gao</p>
-        </footer>
-    </body>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected work by Yuanzou Gao in agent evaluation, governed retrieval, recommendation, and machine learning.">
+  <meta name="theme-color" content="#f4f1eb"><title>Projects — Yuanzou Gao</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css"><script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="brand" href="index.html" aria-label="Yuanzou Gao, home"><span class="brand-mark">YG<span class="brand-dot">.</span></span><span class="brand-name">YUANZOU GAO<br>高源邹</span></a><nav class="site-nav" aria-label="Main navigation"><a href="about.html">About</a><a href="projects.html" aria-current="page">Projects</a><a href="resume.html">Résumé</a><a class="nav-contact" href="contact.html">Let's talk <span aria-hidden="true">↗</span></a></nav></header>
+  <main id="main" class="interior-main page-shell">
+    <div class="page-heading" data-reveal><p class="section-index">02 / SELECTED WORK</p><div><h1>Ideas in <em>practice.</em></h1><p class="heading-note">A collection of experiments and products, with the evidence and limits behind each result.</p></div></div>
+    <div class="project-grid">
+      <article class="project-card" data-reveal><p class="project-date">01 / APPLIED AI · 2026</p><h3>ContextOps Lab</h3><p>Built paired experiments and safety controls to decide when context compression helps an AI agent. A live pilot reduced estimated provider cost, but failed task-quality and latency gates; rollout stayed off. Later local work tested query-aware caching, exact-original fallback, and durable Redis storage.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">Evaluation</span><span class="tag">Redis</span></div><p class="project-link-wrap"><a class="project-link" href="https://github.com/yuanzou0/contextops-lab" target="_blank" rel="noopener noreferrer">View project ↗</a></p></article>
+      <article class="project-card" data-reveal><p class="project-date">02 / GOVERNED RAG · 2026</p><h3>ClearCare Health</h3><p>Built a bounded health-information agent with deterministic emergency routing, governed evidence retrieval, inspectable actions, and a 90-case development evaluation. This is a research prototype without clinical validation.</p><div class="project-tags"><span class="tag">Flask</span><span class="tag">RAG</span><span class="tag">Safety</span></div><p class="project-link-wrap"><a class="project-link" href="https://github.com/yuanzou0/clearcare-health-agent" target="_blank" rel="noopener noreferrer">View project ↗</a></p></article>
+      <article class="project-card" data-reveal><p class="project-date">03 / RECOMMENDATION · 2026</p><h3>MovieLens 1M Recommender</h3><p>Reworked a course project into a reproducible offline comparison with chronological splits and sampled-candidate ranking. The popularity baseline led on ranking quality; sparse SVD improved catalog coverage and novelty.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">Recommendation</span><span class="tag">Experiment Design</span></div><p class="project-link-wrap"><a class="project-link" href="https://github.com/yuanzou0/movielens-1m-recommender" target="_blank" rel="noopener noreferrer">View project ↗</a></p></article>
+      <article class="project-card" data-reveal><p class="project-date">04 / COMPUTER VISION · 2025</p><h3>Plant Trait Prediction</h3><p>Built a multimodal image and metadata pipeline with ResNet-50, EfficientNetV2, and ViT for predicting six plant traits. Authored experiments aligned with PlantTraits2024 task design and proposed fine-tuning strategies.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">ResNet-50</span><span class="tag">Computer Vision</span></div><p class="project-link-wrap"><a class="project-link" href="https://github.com/yuanzou0/PlantTraits2024" target="_blank" rel="noopener noreferrer">View project ↗</a></p></article>
+      <article class="project-card" data-reveal><p class="project-date">05 / MACHINE LEARNING · 2024</p><h3>Spotify Song Classification</h3><p>Built an ML pipeline on 52,000 Spotify tracks for genre prediction and popularity drivers. Implemented regression models, trained classifiers, and applied PCA and clustering to visualize genre structure.</p><div class="project-tags"><span class="tag">Machine Learning</span><span class="tag">PCA</span><span class="tag">Clustering</span></div><p class="project-link-wrap"><a class="project-link" href="https://github.com/yuanzou0/Spotify-Song-Classification-and-Popularity-Analysis" target="_blank" rel="noopener noreferrer">View project ↗</a></p></article>
+      <article class="project-card" data-reveal><p class="project-date">06 / STATISTICS · 2022</p><h3>Bias in Teaching Evaluation</h3><p>Studied the impact of unconscious biases on teaching evaluation. Used regression and transformations in R to identify potential discrimination based on gender, appearance, and native language.</p><div class="project-tags"><span class="tag">R</span><span class="tag">Statistical Analysis</span><span class="tag">Regression</span></div></article>
+    </div>
+  </main>
+  <footer class="site-footer"><span>© 2026 YUANZOU GAO</span><span>THOUGHTFUL BY DESIGN.</span><a href="contact.html">LET'S TALK ↗</a></footer>
+</body>
 </html>

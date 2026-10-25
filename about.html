@@ -1,75 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Meet Yuanzou Gao, an NYU data science student working on applied AI, evaluation, and responsible data products.">
-        <title>About · Yuanzou Gao</title>
-        <link rel="stylesheet" href="styles.css">
-        <!-- Leaflet CSS & JS for Interactive Map -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-        <style>
-            main{
-                font-size: 1.2em;
-            }
-        </style>
-    </head>
-
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <div class="about_container">
-                <div class="photo_part">
-                    <img src="images/IMG_0245_480.JPG" srcset="images/IMG_0245_960.JPG 2x, images/IMG_0245_1440.JPG 3x" width="240" height=auto alt="Yuanzou Gao's Selfie">
-                </div>
-
-                <div class="word_part">
-                <p>Hi, I'm Yuanzou Gao (高源邹). I'm pursuing an M.S. in Data Science at New York University, expected in May 2027.</p>
-                    <p>I build applied AI and data science projects with a focus on evidence: clear baselines, inspectable decisions, source provenance, and honest limits. My current work includes AI-agent evaluation, governed retrieval, and machine learning experiments.</p>
-                    <p>Before graduate school, I earned a B.A. joint major in Mathematics and Data Science from NYU and studied at Mount Holyoke College. My research and data internships taught me to connect messy inputs to useful decisions.</p>
-                </div>
-
-                <div class="skills_part">
-                    <h3 style="margin-top: 0;">Skills & Expertise</h3>
-                    <span class="tag">Python</span>
-                    <span class="tag">R</span>
-                    <span class="tag">SQL</span>
-                    <span class="tag">Stata</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">Data Visualization</span>
-                    <span class="tag">AI Evaluation</span>
-                    <span class="tag">RAG</span>
-                    <span class="tag">Experiment Design</span>
-                </div>
-
-                <div class="map_part">
-                    <h3 style="margin-top: 0;">My Footprints</h3>
-                    <p style="font-size: 0.85em; color: #777; margin-top: -10px;">Places I've studied and worked.</p>
-                    <div id="map" style="height: 350px; border-radius: 12px; z-index: 1; border: 1px solid #eee;"></div>
-                </div>
-
-                <div class="quote_part">
-                    <p id="dailyMessage">Hello world</p>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <p>© 2026 Yuanzou Gao</p>
-        </footer>
-
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Yuanzou Gao: a New York University data scientist exploring applied AI, careful evaluation, and evidence-led products.">
+  <meta name="theme-color" content="#f4f1eb"><title>About — Yuanzou Gao</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="brand" href="index.html" aria-label="Yuanzou Gao, home"><span class="brand-mark">YG<span class="brand-dot">.</span></span><span class="brand-name">YUANZOU GAO<br>高源邹</span></a><nav class="site-nav" aria-label="Main navigation"><a href="about.html" aria-current="page">About</a><a href="projects.html">Projects</a><a href="resume.html">Résumé</a><a class="nav-contact" href="contact.html">Let's talk <span aria-hidden="true">↗</span></a></nav></header>
+  <main id="main" class="interior-main page-shell">
+    <div class="page-heading" data-reveal><p class="section-index">01 / ABOUT ME</p><div><h1>A little <em>about me.</em></h1><p class="heading-note">Curious about what AI can do, and careful about what the evidence actually shows.</p></div></div>
+    <section class="about-feature interior-rule">
+      <div class="about-portrait" data-reveal><img src="images/IMG_0245_960.JPG" srcset="images/IMG_0245_480.JPG 480w, images/IMG_0245_960.JPG 960w, images/IMG_0245_1440.JPG 1440w" sizes="(max-width: 760px) 100vw, 450px" width="960" height="1280" alt="Yuanzou Gao outdoors"></div>
+      <div class="about-copy" data-reveal><p class="micro-label">HELLO, I'M YUANZOU</p><h2>I believe better AI begins with <em>better questions.</em></h2><p>I'm pursuing an M.S. in Data Science at New York University, expected in May 2027. I build applied AI and data science projects with a focus on evidence: clear baselines, inspectable decisions, source provenance, and honest limits.</p><p>My current work includes AI-agent evaluation, governed retrieval, and machine learning experiments. Before graduate school, I earned a B.A. joint major in Mathematics and Data Science from NYU and studied at Mount Holyoke College.</p><p>Research and data internships taught me to turn messy inputs into useful decisions — and to make the reasoning visible along the way.</p><a class="text-link" href="resume.html">Explore my résumé <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="skills-section interior-rule" data-reveal><div class="split-section-heading"><p class="section-index">02 / TOOLKIT</p><h2>Ways I <em>work.</em></h2></div><div class="skill-list"><span class="tag">Python</span><span class="tag">R</span><span class="tag">SQL</span><span class="tag">Machine Learning</span><span class="tag">Data Visualization</span><span class="tag">AI Evaluation</span><span class="tag">RAG</span><span class="tag">Experiment Design</span><span class="tag">Statistical Analysis</span></div></section>
+    <section class="map-section interior-rule" data-reveal><div class="split-section-heading"><p class="section-index">03 / FOOTPRINTS</p><h2>Places that <em>shaped me.</em></h2></div><p class="map-intro">A few places I've studied, worked, and explored.</p><div class="map-frame"><div id="map" role="img" aria-label="Map of places Yuanzou has studied, worked, and traveled"></div></div><p class="map-caption">INTERACTIVE MAP · DRAG TO EXPLORE</p></section>
+  </main>
+  <footer class="site-footer"><span>© 2026 YUANZOU GAO</span><span>THOUGHTFUL BY DESIGN.</span><a href="contact.html">LET'S TALK ↗</a></footer>
         <script>
             // Initialize the map
             var map = L.map('map').setView([35, -10], 2); // Centered to show both US and China
@@ -128,7 +81,5 @@
                 L.marker(loc.coords).addTo(map)
                     .bindPopup('<div style="text-align:center;"><b>' + loc.name + '</b></div>');
             });
-        </script>
-        <script src="script_about.js" defer></script>
-    </body>
+        </script></body>
 </html>

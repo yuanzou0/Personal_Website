@@ -2,6 +2,8 @@
 
 A static portfolio for Yuanzou Gao, focused on applied AI, evaluation, and data science.
 
+The site uses an editorial visual system: warm paper tones, oversized type, fine rules, restrained motion, and a portrait-led homepage. The layout adapts to mobile screens and honors reduced-motion preferences.
+
 ## Preview
 
 Open `index.html` in a browser, or run `python3 -m http.server 8000` from the repository root and visit `http://localhost:8000/`.
