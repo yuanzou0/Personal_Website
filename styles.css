@@ -63,6 +63,7 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:var(--display);letter-spacing:-.065
 .lang-zh{font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',var(--sans);line-height:1.75}
 .lang-zh h1,.lang-zh h2,.lang-zh h3,.lang-zh .work-title{font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',var(--display);letter-spacing:-.065em}
 .lang-zh em{font-family:'Songti SC','STSong','Noto Serif CJK SC',serif;font-style:normal;font-weight:500;letter-spacing:-.06em}
+.lang-zh .page-heading h1 em{font-family:inherit;font-weight:inherit;letter-spacing:inherit}
 .lang-zh .site-nav a{letter-spacing:.04em}
 .lang-zh .hero-copy h1{font-size:clamp(3.8rem,6.3vw,7.4rem);line-height:1.22}
 .lang-zh .hero-copy h1 em{font-size:1em}
