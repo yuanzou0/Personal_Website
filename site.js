@@ -12,3 +12,8 @@ if (!reducedMotion && 'IntersectionObserver' in window) {
 } else {
   document.querySelectorAll('[data-reveal]').forEach(element => element.classList.add('is-visible'));
 }
+
+const languageSwitch = document.querySelector('.language-switch');
+if (languageSwitch && location.hash && document.getElementById(location.hash.slice(1))) {
+  languageSwitch.href += location.hash;
+}
