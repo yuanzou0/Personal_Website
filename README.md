@@ -10,4 +10,4 @@ The site uses plain HTML and CSS, with no build step. `about.html` loads Leaflet
 
 ## Content notes
 
-Project summaries link to public repositories or the public InvestEval prototype. Research and prototype status is described on each card. The resume page is a current HTML overview that can be printed or saved as a PDF; the older PDF files remain in the repository as archives and are not linked from the current page.
+Project summaries link to public repositories. Research and prototype status is described on each card. The resume page includes a link to the current Chinese PDF résumé. The older PDF files remain in the repository as archives and are not linked from the current page.
