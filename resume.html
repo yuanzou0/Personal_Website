@@ -4,7 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resume</title>
+        <meta name="description" content="Yuanzou Gao's current education, experience, projects, and skills.">
+        <title>Resume · Yuanzou Gao</title>
         <link rel="stylesheet" href="styles.css">
         <style>
             main{
@@ -28,41 +29,17 @@
         </header>
 
         <main>
-            <div class="resume-controls" style="text-align: center; margin-bottom: 2rem; margin-top: 1rem;">
-                <button onclick="showResume('en')" id="tab-en" class="resume-tab active">English Resume</button>
-                <button onclick="showResume('cn')" id="tab-cn" class="resume-tab">中文简历</button>
-            </div>
-
-            <div id="resume-en" class="resume-section">
-                <embed src="resume.pdf" width="100%" height="700px">
-                <p style="text-align: center;"><a class="resume-btn" href="resume.pdf" download>Download English Resume (PDF)</a></p>
-            </div>
-
-            <div id="resume-cn" class="resume-section" style="display: none;">
-                <embed src="resume_cn.pdf" width="100%" height="700px">
-                <p style="text-align: center;"><a class="resume-btn" href="resume_cn.pdf" download>下载中文简历 (PDF)</a></p>
-            </div>
+            <div class="resume-header"><div><p class="eyebrow">CURRENT PROFILE</p><h1>Yuanzou Gao <span class="resume-chinese">高源邹</span></h1><p>Applied AI · Data Science · Evaluation</p></div><button class="resume-btn print-button" type="button" onclick="window.print()">Print / Save PDF</button></div>
+            <section class="resume-block"><h2>Education</h2><div class="resume-entry"><div><h3>New York University</h3><p>M.S. in Data Science</p></div><span>2025–2027 (expected)</span></div><div class="resume-entry"><div><h3>New York University</h3><p>B.A., Joint Major in Mathematics and Data Science</p></div><span>2023–2025</span></div><div class="resume-entry"><div><h3>Mount Holyoke College</h3><p>Undergraduate study in mathematics and economics</p></div><span>2021–2022</span></div></section>
+            <section class="resume-block"><h2>Selected Work</h2><div class="resume-entry"><div><h3>ContextOps Lab</h3><p>Designed paired AI-agent context-compression experiments and safety controls. Kept rollout off when live quality and latency gates failed.</p></div><span>2026–present</span></div><div class="resume-entry"><div><h3>ClearCare Health</h3><p>Built a bounded health-information agent with governed retrieval and evaluation; research prototype, not clinically validated.</p></div><span>2026–present</span></div><div class="resume-entry"><div><h3>InvestEval</h3><p>Developed a prototype for investment-agent answer governance, human review, and evidence-based release decisions using synthetic cases.</p></div><span>2026</span></div><div class="resume-entry"><div><h3>MovieLens 1M Recommender</h3><p>Compared popularity and SVD with chronological holdout and leakage-safe offline evaluation.</p></div><span>2026</span></div></section>
+            <section class="resume-block"><h2>Experience</h2><div class="resume-entry"><div><h3>MicroPort · Data Analysis Intern</h3><p>Cleaned and standardized data for 4,009 hospitals and analyzed 262,644 target departments to support market segmentation.</p></div><span>Summer 2024</span></div><div class="resume-entry"><div><h3>Duke Kunshan University · Research Intern</h3><p>Used Python, R, and SQL for research data preparation and analysis.</p></div><span>Summer 2023</span></div></section>
+            <section class="resume-block"><h2>Skills</h2><p>Python, SQL, R, pandas, scikit-learn, Flask, retrieval and RAG, AI-agent evaluation, experiment design, data visualization.</p></section>
+            <p class="resume-contact">For a role-specific résumé, <a href="contact.html">get in touch</a>. Explore the <a href="projects.html">project details</a> and linked repositories for methods and evidence.</p>
         </main>
 
         <footer>
             <p>© 2026 Yuanzou Gao</p>
         </footer>
         
-        <script>
-            function showResume(lang) {
-                // Hide both sections
-                document.getElementById('resume-en').style.display = 'none';
-                document.getElementById('resume-cn').style.display = 'none';
-                
-                // Remove active class from both tabs
-                document.getElementById('tab-en').classList.remove('active');
-                document.getElementById('tab-cn').classList.remove('active');
-                
-                // Show selected section and add active class to selected tab
-                document.getElementById('resume-' + lang).style.display = 'block';
-                document.getElementById('tab-' + lang).classList.add('active');
-            }
-        </script>
-        <script src="script.js" defer></script>
     </body>
 </html>
